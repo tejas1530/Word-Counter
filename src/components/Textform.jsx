@@ -35,7 +35,7 @@ export const Textform = (props) => {
   const upClickChange = (event) => {
     setText(event.target.value);
   };
-  const [Text, setText] = useState("Please Enter The Text");
+  const [Text, setText] = useState("");
   let Time;
   if (Text.split(" ").length * 0.008 * 60 > 60) {
     Time = Text.split(" ").length + "sec";
